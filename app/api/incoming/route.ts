@@ -5,5 +5,16 @@ export async function POST(req: Request) {
 
   console.log("INCOMING MESSAGE:", body);
 
-  return NextResponse.json({ status: "ok" });
+  // TEMP: fixed alpha reply
+  const reply = {
+    to: body.from,
+    text: "Hi 🌿 This is Yasmin. I’m here and listening."
+  };
+
+  console.log("YASMIN REPLY:", reply);
+
+  return NextResponse.json({
+    status: "ok",
+    reply
+  });
 }
