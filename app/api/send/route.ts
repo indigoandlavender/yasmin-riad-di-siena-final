@@ -1,0 +1,1 @@
+import {NextResponse} from "next/server"; import {logEvent} from "../../../lib/events"; import {sendMock} from "../../../lib/sender"; export async function POST(req:Request){const body=await req.json(); await logEvent(body); await sendMock(body); return NextResponse.json({ok:true});}

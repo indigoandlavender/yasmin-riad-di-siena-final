@@ -1,0 +1,1 @@
+import GuestActions from "../../../components/GuestActions"; import MessageComposer from "../../../components/MessageComposer"; export default function GuestPage({params}:{params:{guestId:string}}){return(<main><h2>Guest {params.guestId}</h2><GuestActions guestId={params.guestId}/><MessageComposer guestId={params.guestId}/></main>);}

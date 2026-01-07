@@ -1,0 +1,1 @@
+export async function logEvent(event:any){console.log("EVENT:",{...event,at:new Date().toISOString()});}

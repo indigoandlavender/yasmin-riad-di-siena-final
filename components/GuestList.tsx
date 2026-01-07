@@ -1,0 +1,1 @@
+"use client"; import {useEffect,useState} from "react"; import Link from "next/link"; export default function GuestList(){const[guests,setGuests]=useState<any[]>([]); useEffect(()=>{fetch("/api/guests").then(r=>r.json()).then(setGuests);},[]); return(<ul>{guests.map(g=>(<li key={g.id}><Link href={`/guests/${g.id}`}>Room {g.room} — {g.name} ({g.status})</Link></li>))}</ul>);}

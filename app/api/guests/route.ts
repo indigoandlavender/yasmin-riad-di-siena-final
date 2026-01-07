@@ -1,0 +1,1 @@
+import {NextResponse} from "next/server"; import {getGuests} from "../../../lib/master"; export async function GET(){return NextResponse.json(getGuests());}

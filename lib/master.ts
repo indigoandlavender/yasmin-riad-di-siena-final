@@ -1,0 +1,1 @@
+export function getGuests(){return[{id:"1",name:"Jacqueline (Test)",room:"2",status:"in-house"}];}

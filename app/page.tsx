@@ -1,0 +1,1 @@
+import GuestList from "../components/GuestList"; export default function Home(){return(<main><h1>Yasmin — Control Panel</h1><GuestList/></main>);}
